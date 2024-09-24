@@ -1,0 +1,6 @@
+-- CreateTable
+CREATE TABLE "Despesa" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "valor" INTEGER NOT NULL,
+    "nome" TEXT NOT NULL
+);

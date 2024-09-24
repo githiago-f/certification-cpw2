@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas despesas</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <section>
+        <div>
+            <h3 class="title">Minhas despesas</h3>
+            <h4 class="total">Total: <span id="total">R$ 0.00</span></h3>
+            <ul id="despesas"></ul>
+        </div>
+
+        <form action="/despesas" method="post" id="novaDespesa">
+            <h3>Cadastrar nova despesa</h3>
+            <label for="nome">Nome da despesa</label>
+            <input type="text" name="nome" id="nome" />
+            <label for="valor">Valor</label>
+            <input type="number" name="valor" id="valor" step=".01" lang="pt-BR" />
+            <input type="submit" value="Cadastrar" />
+        </form>
+
+        <div id="mensagem"></div>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html>
